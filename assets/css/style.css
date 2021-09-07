@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 20px 0;
+  margin: auto;
+}
+
+nav h1 {
+  flex-basis: 40%;
+  color: blue;
+  cursor: pointer;
+}
+
+nav ul {
+  font-size: 16px;
+  flex-basis: 60%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s;
+}
+
+nav ul li a {
+  box-sizing: border-box;
+  padding: 10px 16px;
+}
+
+nav ul li:hover a {
+  padding: 10px 16px;
+  background-color: #eaeaea;
+  color: blue;
+}
+
+nav ul li a {
+  color: black;
+}
+
+#beranda {
+  padding: 20px 10%;
+  margin: auto;
+  background: linear-gradient(160deg, rgb(234, 245, 250), rgb(151, 220, 252));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#beranda img {
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#beranda .side-left {
+  background-color: inherit;
+  width: 38%;
+  color: rgb(90, 90, 253);
+}
+
+#beranda .side-left h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: bold;
+  font-size: 30px;
+}
+
+.btn-register {
+  display: inline-block;
+  padding: 14px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+}
+
+#tentang {
+  padding: 6% 10%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#tentang header {
+  flex-basis: 40%;
+  border: 0;
+}
+
+#tentang header h2,
+#lokasi h2 {
+  font-size: 1.5em;
+  color: #8f8f8f;
+  margin-bottom: 20px;
+}
+
+#tentang header p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#tentang .info {
+  flex-basis: 60%;
+}
+
+#tentang .info p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+  line-height: 24px;
+}
+
+#lokasi,
+#kontak-kami {
+  width: 100%;
+  padding: 6% 10%;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+
+#lokasi h2 {
+  text-align: center;
+}
+
+#lokasi iframe {
+  width: 80vw;
+}
+
+#pendaftaran {
+  width: 100%;
+  padding: 6% 10%;
+}
+
+.card {
+  padding: 20px;
+  box-shadow: 0 1px 4px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  color: #727272;
+}
+
+.form-group input {
+  border: 1px solid rgba(124, 124, 124, 0.6);
+  outline: 0;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.form-check {
+  padding: 8px;
+}
+
+.form-check label {
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-check input[type=radio]+span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.btn {
+  display: block;
+  margin: 2em auto 0;
+  border: 0;
+  padding: 14px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(59, 59, 253);
+
+}
+
+.btn-primary {
+  background-color: rgb(90, 90, 253);
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.sisa-kouta {
+  padding: 20px;
+  text-align: center;
+}
+
+#kontak-kami {
+  width: 100%;
+  padding: 6% 10%;
+  background: linear-gradient(90deg, rgb(61, 106, 253), rgb(133, 186, 255));
+}
+
+#kontak-kami h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container .card {
+  width: 100%;
+  background-color: white;
+  flex-basis: 30%;
+  opacity: 0;
+  transition: 1s;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.medkom {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.medkom img {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 0;
+  margin-right: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(74, 74, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8em;
+  flex-wrap: wrap;
+}
+
+.icon-toggler {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.active {
+  display: flex;
+  opacity: 1;
+}
+
+.nav-active {
+  height: 280px;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+@media (min-width: 598px) and (max-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  #kontak-kami .card {
+    flex-basis: 60%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  #tentang header,
+  #tentang .info {
+    flex-basis: 100%;
+  }
+
+  #tentang header {
+    margin-bottom: 10px;
+  }
+
+  #kontak-kami .card {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  #kontak-kami .card img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  #beranda .side-left h2 {
+    font-size: 1.6em;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  #kontak-kami .card {
+    flex-basis: 40%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #beranda .side-left h2 {
+    font-size: 1.5em;
+  }
+
+  #beranda .side-left,
+  #beranda img {
+    flex-basis: 100%;
+  }
+
+  #beranda .side-left {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1150px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 76px;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  nav ul {
+    opacity: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 1s;
+  }
+
+  nav ul li {
+    margin-top: 16px;
+  }
+
+  nav .icon-toggler {
+    display: block;
+    cursor: pointer;
+  }
+}

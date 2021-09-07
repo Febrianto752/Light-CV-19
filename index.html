@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Light VC-19</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">Light VC-19</h1>
+        <ul class="navbar-nav">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#lokasi">Lokasi</a></li>
+          <li><a href="#pendaftaran">Pendaftaran</a></li>
+          <li><a href="#kontak-kami">kontak kami</a></li>
+        </ul>
+        <div class="icon-toggler">&#9776</div>
+      </nav>
+
+    </header>
+    <main>
+      <div class="content">
+        <article id="beranda">
+          <div class="side-left">
+            <h2>
+              Vaksinasi COVID-19 Khusus Daerah Kabupaten Bekasi, Kouta Terbatas! Segera Daftarkan Diri Anda
+            </h2>
+            <a href="#pendaftaran" class="btn-register">Pendaftaran Vaksinasi</a>
+          </div>
+          <img src="./assets/img/vaksinasiy.jpg" alt="gambar1">
+        </article>
+        <article id="tentang">
+          <header>
+            <h2>Tentang</h2>
+            <p>Apa itu Light VC-19?</p>
+          </header>
+          <div class="info">
+            <p>
+              Light VC-19 adalah Program yang diselenggarakan oleh perusahaan FTO dan bekerja sama dengan SMP Negeri 1
+              Cikarang Barat. Program ini berfungsi menyediakan layanan
+              vaksinasi khusus masyarakat di daerah kabupaten Bekasi.
+            </p>
+            <p>
+              Program ini adalah upaya untuk mengurangi persentase penyebaran COVID-19 di kabupaten Bekasi.
+            </p>
+            <p>
+              Kouta peserta dalam program ini sebesar 1000 dan akan berlangsung di SMP Negeri 1 Cikarang Barat pada
+              tanggal 10 September 2021, acara dimulai pukul 08:00 WIB - Selesai .
+            </p>
+          </div>
+        </article>
+
+        <article id="lokasi">
+          <h2>Lokasi Vaksinasi</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9537472910156!2d107.10177571375652!3d-6.2698133954619015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6985687e3d8ac5%3A0xf714f29cd79f186e!2sSMP%20Negeri%201%20Cikarang%20Barat!5e0!3m2!1sid!2sid!4v1630821873123!5m2!1sid!2sid"
+            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+        <article id="pendaftaran">
+          <div class="card">
+            <h2>Formulir Pendaftaran</h2>
+
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="namaLengkap">Nama Lengkap</label>
+                <input type="text" name="namaLengkap" placeholder="Masukan Nama Lengkap Anda..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="nik">NIK (Nomor Induk Kependudukan)</label>
+                <input type="text" name="nik" placeholder="Masukan NIK Anda...">
+              </div>
+
+              <div class="form-group">
+                <label for="noHP">Nomor Handphone</label>
+                <input type="number" name="noHP" placeholder="Masukan No.HP Anda...">
+              </div>
+
+              <div class="form-group">
+                <label for="usia">Usia (Minimal 12 tahun)</label>
+                <input type="number" name="usia" placeholder="Masukan Usia Anda...">
+              </div>
+              <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" name="alamat" placeholder="Masukan Alamat Tempat Tinggal Anda...">
+              </div>
+              <div class="form-check">
+                <label for="">Sudah Pernah Vaksin Pertama</label>
+                <input type="radio" name="vaksin1"> <span>Sudah</span>
+                <input type="radio" name="vaksin1"> <span>Belum</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+          </div>
+          <div class="sisa-kouta">
+            <p>Sisa Kouta Peserta : <span id="score">1000</span></p>
+          </div>
+        </article>
+      </div>
+      <aside id="kontak-kami">
+        <h2>Kontak Kami</h2>
+        <div class="container">
+          <div class="card">
+            <img src="./assets/img/febri.jpg" alt="gambar">
+            <hr>
+            <p>Nama : Febrianto</p>
+            <div class="medkom">
+              <img src="./assets/img/wa.png" alt="whatsapp">
+              <span>081293269076</span>
+            </div>
+            <div class="medkom">
+              <img src="./assets/img/gmail.png" alt="gmail">
+              <span>febrianto.bekasi@gmail.com</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/img/manager1.jpg" alt="gambar">
+            <hr>
+            <p>Nama : Yudi Setiawa</p>
+            <div class="medkom">
+              <img src="./assets/img/wa.png" alt="whatsapp">
+              <span>081293999076</span>
+            </div>
+            <div class="medkom">
+              <img src="./assets/img/gmail.png" alt="gmail">
+              <span>yudi.setiawa@gmail.com</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/img/manager2.jpg" alt="gambar">
+            <hr>
+            <p>Nama : Nabila Christina</p>
+            <div class="medkom">
+              <img src="./assets/img/wa.png" alt="whatsapp">
+              <span>081255269765</span>
+            </div>
+            <div class="medkom">
+              <img src="./assets/img/gmail.png" alt="gmail">
+              <span>cristin@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2021 Copyright FTO Company ~ Light CV-19 </p>
+    </footer>
+
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+
+</html>
