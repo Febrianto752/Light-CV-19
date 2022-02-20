@@ -75,6 +75,8 @@ form.addEventListener("submit", function (event) {
   inputNoHP.value = "";
   inputUsia.value = "";
   inputAlamat.value = "";
+
+  updateQoutaVaksin();
 });
 
 function updateQoutaVaksin() {
