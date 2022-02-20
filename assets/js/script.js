@@ -52,7 +52,12 @@ function getListPeserta() {
 }
 
 form.addEventListener("submit", function (event) {
+  event.preventDefault();
   let inputName = document.querySelector("form input[name=namaLengkap]");
+  let inputNIK = document.querySelector("form input[name=nik]");
+  let inputNoHP = document.querySelector("form input[name=noHP]");
+  let inputUsia = document.querySelector("form input[name=usia]");
+  let inputAlamat = document.querySelector("form input[name=alamat]");
   if (checkStorage()) {
     let list_peserta = getListPeserta();
     list_peserta = JSON.parse(list_peserta);
@@ -61,8 +66,15 @@ form.addEventListener("submit", function (event) {
     });
     localStorage.setItem("list_peserta", JSON.stringify(list_peserta));
     alert("Selamat anda berhasil mendaftar sebagai peserta vaksinasi");
-    event.preventDefault();
+  } else {
+    alert("Something Error...");
   }
+
+  inputName.value = "";
+  inputNIK.value = "";
+  inputNoHP.value = "";
+  inputUsia.value = "";
+  inputAlamat.value = "";
 });
 
 function updateQoutaVaksin() {
